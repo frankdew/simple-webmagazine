@@ -1,0 +1,369 @@
+@charset "UTF-8";
+* {
+	/* De width en height berekenen aan de hand van content, incl. eventuele padding en border. */
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {
+	font-size: 100%; /* werken met rem door root op 100% te zetten */
+}
+body {
+	padding: 0;  /* zonder padding of margin opbouwen beginnen */
+	margin: 0;
+	line-height: 1.2rem;  /* basis line-height voor de pagina */
+	letter-spacing: 1px;  /* basis ruimte tussen de letters voor de pagina */
+	background: -webkit-linear-gradient(to left, #243B55, #141E30);  /* prefix */
+	background: linear-gradient(to left, #243B55, #141E30); 
+}
+.container{
+	max-width: 960px;  /* magazine niet breder dan 960px laten worden ongeacht scherm */
+	padding: 0.5% 0 2% 0; 
+	margin: 3% auto;
+	background: -webkit-linear-gradient(to right, #4CA1AF, #2C3E50);  /* prefix */
+	background: linear-gradient(to right, #4CA1AF, #2C3E50); 
+	-webkit-box-shadow: -1px 6px 30px 2px rgba(0,0,0,0.75);  /* prefix */
+	-moz-box-shadow: -1px 6px 30px 2px rgba(0,0,0,0.75);  /* prefix */
+	box-shadow: -1px 6px 30px 2px rgba(0,0,0,0.75);
+}
+
+/**********************************************************************
+											BANNER / HEADER VAN WEBMAGAZINE
+***********************************************************************/
+
+#wrapperStart{  /* container voor de header/banner */
+	font-size: 1.2rem;
+	font-weight: 700i;
+	margin: 2%;
+}
+#wrapperStart .front{ /* Gradient kleur voorzijde magazine banner (naam) */
+	background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a); /* prefix */
+	background: linear-gradient(to right, #f7b733, #fc4a1a); 
+	font-size: 1.4rem;
+	font-style: italic;
+	cursor: pointer;
+}
+#wrapperStart .front small{  /* onderschrift klein geschreven */
+	font-size: 0.9rem;
+	padding: 2% 1% 2% 1%;
+}
+#wrapperStart .front h1{  /* styling header van de banner*/
+	font-size: 1.6rem;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 700;
+	letter-spacing: 2px;
+	padding-bottom: 2%;
+}
+#wrapperStart .back h2{
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 700;
+	letter-spacing: 2px;
+	font-size: 1.4rem;
+	line-height: 1.4rem;
+}
+#wrapperStart .back{  /* Gradient kleur achterzijde magazine banner (naam) */
+background: -webkit-linear-gradient(to left, #FFC837, #FF8008);  /* prefix */
+background: linear-gradient(to left, #FFC837, #FF8008); 
+}
+#wrapperStart .front, #wrapperStart .back{
+	padding: 5%;
+	color: #676761;
+	text-align: center;
+	text-shadow: -1px 2px 2px;
+}
+
+/******************** CONTAINER VOOR ARTIKEL 1 & 2 *******************/
+#wrapper{
+	display: flex;
+	margin-top: 2%;
+}
+#wrapper{
+	flex-direction: column;
+}
+#wrapper > section{
+	margin: 2%;
+	padding:  2%;
+}
+	#art1{  /* Verhouding van verdeling van de container in twee flex-items */
+	flex: 1;
+	background-color: rgba(248,181,56, 0.9);
+}
+	#art2{
+	flex: 1;
+	align-self: flex-start;
+	background-color: rgba(204,204,204, 0.9);
+}
+
+/**********************************************************************
+								ARTIKEL 1 - TOP 5 Beste Websites
+***********************************************************************/
+#art1 img{  /* Image over de hele breedte van de container */
+	width: 100%;
+	margin: 0 auto;
+}
+#art1 h2, #art1 h3, #art2 h2, #art2 h3{ /* font instelling voor artikel 1 & 2 */
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 700;
+	padding: 4% 0 4% 3%;
+	font-size: 1.4rem;
+	color: #676761;
+	text-shadow: -1px 1px 1px;
+}
+#art1 #uitleg{
+	font-size: 0.5rem;
+	font-style: italic;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 400;
+	color: #676761;
+	padding-top: 2%;
+}
+#art1 h3{
+	font-size: 1rem;
+	cursor: pointer;
+}
+#art1 h3 span{
+	display: block;
+	font-size: 0.6rem;
+}
+#wrapper p, #wrapper li{  /* font instelling voor artikel 1 & 2 */
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 400;
+	font-size: 1rem;
+	color: #676761;
+}
+
+/**********************************************************************
+								ARTIKEL 2 - REVIEW ......
+***********************************************************************/
+#wrapper #art2 h2{
+	padding-bottom: 1%;
+	font-size: 1.5rem;
+}
+#wrapper #art2 > img{
+	width: 20%;
+	float: left;
+	margin: 4%;
+}
+#wrapper #art2 img:nth-child(1){
+	float: right;
+	width: 30%;
+	border-radius: 5px;
+	box-shadow: -2px 2px 2px;
+	margin: 5%;
+}
+#art2 h2, #art2 h3{
+	color: #bc1142;
+	text-shadow: -2px 2px 2px #8f0d33;
+	font-style: italic;
+}
+#art2 a{
+	text-decoration: none;
+	color: #bc1142;
+}
+#art2 a:hover{
+	text-shadow: 2px 2px 2px #4e5f6c;
+}
+#wrapper #art2 p{
+	font-weight: 500;
+	font-size: 1rem;
+}
+.bron{
+	display: block;
+	text-align: left;
+	margin: 4% 0;
+	font-family: 'Roboto Mono', monospace;
+}
+cite{
+	font-style: italic;
+}
+
+/**********************************************************************
+											ARTIKEL 3 - AJAX HESJES
+***********************************************************************/
+#wrapperToo{
+	display: flex;
+	color: #ffffff;
+	padding: 3%;
+	border: 1px solid #ffffff; 
+	margin: 1%;
+}
+#art3 a{
+	color: #ffffff;
+}
+#art3 #ajax{
+	float: left;
+		width: 42%;
+}
+#art3 img:last-of-type{
+	width: 95%;
+	float:right;
+	margin: 2%;
+	border-radius: 10px;
+}
+#art3 em{
+	font-style: italic;
+}
+#art3 h2{
+	font-size: 1.8rem;
+	margin: 1.6rem 0 1.4rem 0;
+	line-height: 2rem;
+	word-spacing: -7px;
+}
+#art3 p{
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 300;
+	font-size: 0.9rem;
+}
+#art3 h3{
+	font-size: 1.4rem;
+	margin: 2rem 0 1rem 0;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 700;
+}
+#art3 h2, #art3 h3{
+	text-align: left;
+	text-shadow: 0px -2px 0px #333, 0px 2px 3px #666;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 700;
+}
+#art3 h2{
+	padding-left: 8%
+}
+#art3 .bron{
+	padding-left: 8%; 
+}
+
+/****************** MEDIA QUERIES************************/
+
+@media screen and (min-width: 320px){
+#art3 h2{
+	font-size: 1.4rem;
+}
+#art3 p{
+	font-size: 0.9rem;
+}
+#art3 h3{
+	font-size: 1.1rem;
+	}
+/*********************************************************
+						LARGER MOBILES (SMALL TABLET)
+*********************************************************/
+@media screen and (min-width: 512px){
+/*************** BANNER / HEADER VAN WEBMAGAZINE ********/
+	#wrapperStart .front h1{
+		font-size: 2rem;
+		padding-top: 2%;
+	}
+	#wrapperStart .back h2{
+		font-size: 2rem;
+		line-height: 1.9rem;
+		word-spacing: -10px;
+	}
+	#wrapper{
+		flex-direction: row;
+	}
+	#art2 h2{
+		padding-right: 10%;
+		line-height: 2rem;
+	}
+	#art1 h2{
+		line-height: 2rem;
+	}
+	#art1 #uitleg{
+		font-size: 0.7rem;
+	}
+	/* Ajax hesjes artikel */
+	#art3 img:last-of-type{
+		float:none;
+		text-align: center;
+	}
+	#art3 h2{
+		font-size: 2rem;
+		margin: 1.6rem 0 1.4rem 0;
+		line-height: 2rem;
+	}
+	#art3 h3{
+		font-size: 1.8rem;
+		margin: 2rem 0 1rem 0;
+	}
+	#art3 p{
+		font-size: 1.1rem;
+	}
+
+}
+/*********************************************************
+									TABLET(PORTRAIT)
+*********************************************************/
+@media screen and (min-width: 768px){
+/*************** BANNER / HEADER VAN WEBMAGAZINE ********/
+	#wrapperStart .front h1{
+		font-size: 2.2rem;
+	}
+	#wrapperStart .back h2{
+		font-size: 2.2rem;
+		line-height: 2.4rem;
+	}
+	#art1 h2{
+		font-size: 1.6rem;
+		word-spacing: -10px;
+	}
+	#art1 h3{
+	font-size: 1.2rem;
+}
+	#art1 h3 span{
+	font-size: 0.8rem;
+}
+	#wrapper #art2 h2{
+		font-size: 1.8rem;
+	}
+	#art3 h2{
+		font-size: 2rem;
+	}
+	#art3 p{
+		font-size: 1.1rem;
+		line-height: 1.5rem;
+	}
+	#art3 h3{
+		font-size: 1.5rem;
+		margin:2rem 0 1rem 0;
+	}
+
+
+}
+
+/*********************************************************
+									LARGER TABLET(LANDSCPE)
+*********************************************************/
+@media screen and (min-width: 980px){
+	/*************** BANNER / HEADER VAN WEBMAGAZINE ********/
+	#wrapperStart .front h1{
+		font-size: 1.8rem;
+	}
+	#wrapperStart .back h2{
+		font-size: 2.4rem;
+	}
+	#wrapperStart .front h1{
+		font-size: 2.4rem;
+	}
+	#art1 h2{
+		font-size: 2rem;
+	}
+
+}
+
+/*********************************************************
+									DESKTOP
+*********************************************************/
+@media screen and (min-width: 1200px){
+/*************** BANNER / HEADER VAN WEBMAGAZINE ********/
+	#wrapperStart .front h1{
+		font-size: 2.8rem;
+		padding-bottom: 4%; 
+	}
+	#wrapperStart .front small{
+		font-size: 1.2rem;
+	}
+
+
+
+}

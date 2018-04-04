@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, 
+      minimum-scale=1.0, maximum-scale=3.0, user-scalable=yes">
+		<title>webmagazine</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300i,400,500,700i" rel="stylesheet">  <!-- googlefonts font gebruikt: Roboto -->
+		<link href="css/css-reset.css" rel="stylesheet" type="text/css">
+		<link href="css/main.css" rel="stylesheet" type="text/css">
+	</head>
+ <body>
+ 	
+<div class="container">																
+ <main>
+ 	<div id="wrapperStart"> <!-- Eerste container voor de banner / bedrijfsnaam -->
+	  <div class="front">  <!-- Banner / header is door klik omdraaibaar, front- en back side -->
+	    <h1>"Break Magazine"</h1><small>..check my backside  &#x21BB;</small>
+	  </div> 
+	  <div class="back"> <!-- Achterkant banner / header -->
+	    <h2>Het MultiMedia Magazine van Nederland</h2>
+	  </div> 
+	</div>
+
+ 	<div  id="wrapper"> <!-- 2e container bestaat uit 2 colommen / artikelen -->
+ 		<section id="art1">
+ 			<h2>Top 5 Coole Websites</h2>
+ 			<p class="bron">Bron: <cite>De beste websites</cite> HetWorks 24 januari 2018</p>
+ 			<p>We hanteren daarbij de volgende criteria:</p>
+ 			<ul>
+ 				<li>De website is innovatief: er wordt gebruik gemaakt van de nieuwste web-standaarden/technieken.</li>
+				<li>De website is vernieuwend qua stijl en uitstraling.</li><br>
+				<li>De websites zijn mooi visueel, mooi functioneel en mooi qua werking en verdienen daarom het label 'mooiste website'.</li>
+			</ul>
+
+			<p id="uitleg"><em>Klik op het nummer en zie de miniatuurafbeelding van de betreffende site, klik op de afbeelding en ga naar de site zelf</em></p>
+
+ 			<h3 id="klm">1. KLM <span> Mooi nieuw Responsive</span></h3>
+ 			<a href="https://www.klm.com/home/nl/nl" target="_blanc"><img id="0" src="images/klm-site.jpg" alt="" title="klm site"></a><div id="hier"></div>
+ 			<h3 id="hello">2. Hello Monday<span>Parallel scrolling made perfectly</span></h3>
+ 			<a href="http://hellomonday.com/" target="_blanc"><img  id="1" src="images/hello-monday-site.jpg" alt="" title="Hello Monday site"></a>
+ 			<h3 id="guggen">3. Guggenheim<span>Kunst het verdiende platform geven</span></h3>
+ 			<a href="http://exhibitions.guggenheim.org/zero/#/artwork" target="_blanc"><img id="2" src="images/guggenheim-site.jpg" alt="" title="Guggenheim site"></a>
+ 			<h3 id="airbnb">4. Airbnb<span>Functioneel een écht pareltje</span></h3>
+ 			<a href="https://www.airbnb.nl/" target="_blanc"><img id="3" src="images/airbnb-site.jpg" alt="" title="airbnb site"></a>
+ 			<h3 id="ah">5. AH<span>De mobiele weergave prima op orde</span></h3>
+ 			<a href="https://www.ah.nl/" target="_blanc"><img id="4" src="images/ah-site.jpg" alt="" title="AH site"></a>
+ 			<div id="hier"></div>
+ 		</section>
+
+ 		<section id="art2">
+ 			<h2><a href="https://pcmweb.nl/artikelen/hardware/raspberry-pi-3-model-b-review-twee-jaar-later/" target="_blanc"> De Raspberry Pi 3</a></h2>
+				<h3>Trage usb-poorten</h3>
+				<p class="bron" >Bron: <cite>Zwakke punt</cite> PCM 28 november 2017</p>
+			<p>De Raspberry Pi 3 heeft een belangrijk zwak punt: <img src="images/pi_3_ports.jpg" alt="raspberry-pi ports" title="raspberry-pi ports" /> zijn trage interne usb 2.0-hub en daardoor ook (omdat de ethernetpoort intern op de usb-hub is aangesloten) een trage ethernetpoort. Dat maakt zelfs deze nieuwste telg uit de Raspberry Pi-familie ongeschikt voor taken die snel veel gegevens moeten doorsturen via het netwerk.
+			<br>Een nas of een ownCloud- of Nextcloud-machine, het is allemaal mogelijk met de Raspberry Pi 3, maar ik heb het geprobeerd en vond de performance absoluut niet voldoende.</p><br>
+			<img src="images/raspberry-pi.png" alt="raspberry-pi logo" title="raspberry-pi logo" />
+			<p>Er is nog niets bekend over de opvolger van de Raspberry Pi 3, maar fans wachten al jaren op een snellere ethernetinterface. Hoewel 10/100 Mbps ethernet voor toepassingen zoals hd-videostreaming volstaat, is gigabit-ethernet zeker welkom. En ook een upgrade naar usb 3.0 of zelfs een (e)sata-aansluiting zou interessant zijn. <br>
+			<br>Beide aanpassingen zouden van de vierde versie van de populaire Raspberry Pi eindelijk een minicomputertje maken dat voor een zelfbouw-nas geschikt is. En nu we toch een verlanglijstje aan het opsommen zijn: hopelijk heeft de Raspberry Pi 4 ook eindelijk een aan- en uitknop en een realtime-klok met batterij.</p>
+		</section>
+	</div>
+
+		<div id="wrapperToo"> <!-- 3e container, actief multimedia artikel over Ajax  -->
+			<article id="art3">
+				<h2>Ajax gaat spelers realtime analyseren dankzij 'hesjes met transponders'.</h2>
+				<p class="bron">Bron: <cite>Ajax hesjes</cite> nu.nl 9 februari 2018</p>
+				<p><img id="ajax" src="images/ajax-logo.png" target="_blanc" > Ajax voorziet spelers tijdens trainingen van hesjes met transponders om onder andere gegevens over afgelegde afstanden en snelheid te verkrijgen. Samen met HPE analyseert de club de data vervolgens met behulp van AI (<a href="https://nl.wikipedia.org/wiki/Kunstmatige_intelligentie" target="_blank"><em>Artificial Intelligence</em></a>).</p> <!-- Link naar wiki page -->
+
+				<p>De transponders in de hesjes staan volgens Ajax en Hewlett Packard Enterprise (HPE) 'in verbinding met het veld' en kunnen zo afstanden, snelheid en veldpositie bepalen. Daarnaast registreert Ajax de lichaamstemperatuur en de hoeveelheid vocht die spelers verliezen. Hiervoor worden technische aanpassingen verricht aan Ajax' Sportpark de Toekomst.</p>
+
+				<h3>Minder blessures</h3>
+				<p>Het geheel wordt gebruikt om het maximale trainingsresultaat te behalen. Ook moet de kans op blessures zo klein mogelijk blijven. Volgens beide partijen kan ook kunstmatige intelligentie worden toegevoegd, wat naar verwachting ook nieuwe inzichten oplevert.</p>
+
+				<p>HPE en Ajax combineren de meetgegevens vervolgens met videobeelden. Het resultaat wordt weergegeven op een dashboard op smartphones en laptops van de technische staf. Bij de analyse past HPE kunstmatige intelligentie toe, al wordt uit het persbericht niet direct duidelijk hoe ai ingezet wordt. HPE wordt tot en met 30 juni 2023 strategisch partner voor de afdeling Ajax ICT.</p><br>
+
+				<p>Het project is onderdeel van een omvangrijker contract van HPE met Ajax. Het bedrijf gaat daarbij de technische infrastructuur voor de voetbalclub leveren. Eerder sloot HPE al een enigszins vergelijkbare overeenkomst met Tottenham Hotspur FC, maar onderdeel daarvan was ook de bouw van een 'stadion van de toekomst',<a href="http://new-stadium.tottenhamhotspur.com/" target="_blanc"><img src="images/tottenham-stadion.jpg"/></a> met een draadloos netwerk met hoge capaciteit, inzicht in bezoekersstromen en socialmedia-analyse om gegevens over de sfeer te verkrijgen.</p>
+		 			
+				<p>Het stadion, en de grond eromheen, gaat niet alleen functioneren als voetbalstadion, maar ook als stadion voor NFL wedstrijden. Daarbij zal het gehele complex dienen als sport-, vrijetijds- en entertainmentbestemming. Het zal ruimte bieden voor indoor extreme sporten zoals klimmen, een hotel met 180 slaapkamers, 579 nieuwe woningen, een medisch centrum en een groot publiek plein met verschillende activiteiten.</p> 
+				<p>Eén van de hoogtepunten (letterlijk) is de Sky Walk op 40 meter hoogte. Een spectaculaire trekpleister voor fans en toeristen die het mogelijk maakt om het stadion te beklimmen en een rondje te maken op het dak.</p> 
+			</article>
+		</div>
+ 	</main>
+ </div>
+
+ 	<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script> <!-- jQuery library -->
+ 	<script src="js/jquery.flip.min.js"></script> <!-- jQuery flip plugin voor header / banner gebruit -->
+  <script src="js/script.js"></script> <!-- Eigen js / jQuery file -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
